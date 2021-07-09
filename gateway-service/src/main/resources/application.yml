@@ -2,18 +2,18 @@ spring:
   application:
     name: gateway-service
 
-  cloud:
-    gateway:
-      routes:
-      - id: productModule
-        uri: lb://MS-PRODUCT
-        predicates:
-        - Path=/products/**
+#  cloud:
+#    gateway:
+#      routes:
+#      - id: productModule
+#        uri: lb://MS-PRODUCT
+#        predicates:
+#        - Path=/products/**
 
-      - id: supplierModule
-        uri: lb://MS-SUPPLIER
-        predicates:
-        - Path=/suppliers/**
+#      - id: supplierModule
+#        uri: lb://MS-SUPPLIER
+#        predicates:
+#        - Path=/suppliers/**
 
 eureka:
   client:
